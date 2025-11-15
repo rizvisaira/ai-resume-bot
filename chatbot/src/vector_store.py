@@ -12,7 +12,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 load_dotenv()
 os.getenv("OPENAI_API_KEY") # Ensure the API key is loaded
 
-def build_vector_store(documents, persist_directory="../../chroma_store"):
+def build_vector_store(documents, persist_directory="./chroma_store"):
     """
     Build and return a Chroma vector store from the provided documents.
 
@@ -31,7 +31,7 @@ def build_vector_store(documents, persist_directory="../../chroma_store"):
     )
     return vector_store
 
-def load_vector_store(persist_directory="../../chroma_store"):
+def load_vector_store(persist_directory="./chroma_store"):
     """
     Load and return a Chroma vector store from the specified directory.
 
@@ -74,8 +74,8 @@ if __name__ == "__main__":
     # documents = loader.load()
 
     # Load both txt and pdf files from the directory
-    txt_loader = DirectoryLoader("../../profile_data", glob="**/*.txt", loader_cls=TextLoader)
-    pdf_loader = DirectoryLoader("../../profile_data", glob="**/*.pdf", loader_cls=PyPDFLoader)
+    txt_loader = DirectoryLoader("./profile_data", glob="**/*.txt", loader_cls=TextLoader)
+    pdf_loader = DirectoryLoader("./profile_data", glob="**/*.pdf", loader_cls=PyPDFLoader)
     
     txt_documents = txt_loader.load()
     pdf_documents = pdf_loader.load()

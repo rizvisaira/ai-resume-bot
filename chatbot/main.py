@@ -64,9 +64,3 @@ class Me:
             else:
                 done = True
         return response.choices[0].message.content
-    
-
-if __name__ == "__main__":
-    me = Me()
-    gr.ChatInterface(me.chat, type="messages").launch()
-

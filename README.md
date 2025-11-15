@@ -1,12 +1,8 @@
 ---
 title: career-me-chatbot
-emoji: 🤖
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: 5.33.1
 app_file: app.py
-pinned: false
+sdk: gradio
+sdk_version: 5.49.1
 ---
 
 # Career Me Chatbot
