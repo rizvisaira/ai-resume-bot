@@ -1,5 +1,5 @@
 ---
-title: Career Me Chatbot
+title: career-me-chatbot
 emoji: 🤖
 colorFrom: blue
 colorTo: green
