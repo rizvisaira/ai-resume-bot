@@ -2,6 +2,7 @@
 .env
 .env.local
 .env.*.local
+requirements_1.txt
 
 # Python
 __pycache__/
